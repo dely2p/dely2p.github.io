@@ -1,7 +1,10 @@
-# Summary
+= Summary
 
-## elly's blog
+== elly's blog
+
 * [Introduction](README.md)
 
 
-## TIL (Today I Learned)
+== Content
+
+* TIL (Today I Learned)
