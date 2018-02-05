@@ -12,6 +12,6 @@
 - ### 코드 분석
 : 내가 짰던 코드는 main, Length, Weight, Volume, Separate, UnitConverter Class로 분류된다.
 
-<img src="/img/ConvertUnit.png" width="30%" height="30%">
+<img src="./img/ConvertUnit.png" width="30%" height="30%">
 
 위의 그림처럼 클래스 별로 기능을 구현했는데, 좀 더 자세한 구조를 위해 데이터를 주고받는 것을 화살표로 그리고 싶었지만 지금 다시 보니 너무 복잡해서 그림으로 그리기 어려웠다;;   그 때 당시에 나름 열심히 구현한 단위 변환기지만 다시보니 못쓰겠다..(셀프디스)
