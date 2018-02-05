@@ -1,5 +1,10 @@
 {
-    "title " : "Elly/'s blog" ,
+    "title": "Elly's blog",
+    "header": {
+      "logo":"./img/elly.png",
+      "logo_alt":"paas",
+      "navigations": [{"title":"Elly's blog", "link":"https://dely2p.gitbooks.io/blog/content/"}]
+    },
     "plugins": ["theme-official@2.1.1", "youtube"]
     /*,
     "pluginsConfig": {
