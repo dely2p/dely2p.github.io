@@ -1,6 +1,5 @@
 {
-    "title": "Elly's blog",
-    "plugins": ["theme-official@2.1.1", "youtube"],
+    "plugins": ["header", "theme-official@2.1.1", "youtube"],
     "pluginsConfig": {
         "layout": {
          "headerPath" : "layouts/header.html"  
