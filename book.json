@@ -1,5 +1,5 @@
 {
-    "plugins": ["layout", "youtube"]
+    "plugins": ["theme-official@2.1.1", "youtube"]
     // "pluginsConfig": {
     //     "layout": {
     //      "headerPath" : "layouts/header.html"  
