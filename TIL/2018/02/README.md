@@ -12,9 +12,10 @@
 
 - ~~PhotoFrame 따로 예습해보기~~
 
-- 나만의 앱 만들어보기 (아직 어떤 앱 만들지는 미정)
+- 나만의 앱 만들어보기 (~~아직 어떤 앱 만들지는 미정~~ -> `선택의 신` 만들 예정)
 
 - 꼼꼼한 재은씨의 스위프트3 앱 개발 부분 읽기
+(~~Chapter12, Chapter13, Chapter14~~, Chapter15, Chapter16, Chapter17, Chapter18, Chapter19, Chapter20, Chapter21, Chapter22, Chapter23, Chapter24, Chapter25)
 
 - ~~읽기 좋은 코드가 좋은 코드다 마저 읽기~~
 
