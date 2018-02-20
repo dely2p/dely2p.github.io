@@ -21,6 +21,8 @@ https://github.com/dely2p/swift-laddergame
 : 내가 짰던 코드는 main, InputView, ResultView, LadderGame, LadderGameInfo, LadderPlayer 클래스로 나누어진다.
 사실 그 때 MVC로 나누어서 만든 것은 아닌데.. 내가 지금 분석하다보니 MVC로 나뉘어 지는 것 같아서 원형으로 묶어보았다.
 
+
+  
  > 각 클래스를 설명하자면,
  
  main: 사용자 입력과 게임동작 그리고 결과 출력 전반을 컨트롤 하는 컨트롤러 역할
@@ -29,6 +31,7 @@ https://github.com/dely2p/swift-laddergame
  LadderGameInfo: Data object로 InputView에서 LadderGame로 참여자 수와 사다리 높이 데이터를 넘길 때 사용된다.
  LadderGame: 사다리 게임에서 step의 유무를 랜덤으로 정해주는데, LadderGameInfo를 이용하여 랜덤값을 생성하는 역할
  LadderPlayer: 참여자의 이름을 가지고 있는 DataObject로 이름을 return하는 메소드를 가지고 있다.
+
 
 
   > 셀프 코드리뷰를 해보면..

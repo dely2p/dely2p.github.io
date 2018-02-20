@@ -1,6 +1,13 @@
 # Elly's blog
 
-https://dely2p.gitbooks.io/blog/content/
+> url
 
-- Github
-  https://github.com/
+   https://dely2p.gitbooks.io/blog/content/
+
+> Github
+
+   https://github.com/dely2p
+   
+> email
+
+    lhyal2p@gmail.com
