@@ -27,6 +27,7 @@ https://github.com/dely2p/swift-laddergame
  
  main: 사용자 입력과 게임동작 그리고 결과 출력 전반을 컨트롤 하는 컨트롤러 역할
  InputView: 사용자에게 참여자 이름과 사다리 높이를 입력받는 역할 (입력 받을 때 space를 기준으로 분리하는 메소드도 포함)
+ 
  ResultView: 사다리 게임을 출력하는 역할
  LadderGameInfo: Data object로 InputView에서 LadderGame로 참여자 수와 사다리 높이 데이터를 넘길 때 사용된다.
  LadderGame: 사다리 게임에서 step의 유무를 랜덤으로 정해주는데, LadderGameInfo를 이용하여 랜덤값을 생성하는 역할
