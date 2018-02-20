@@ -66,8 +66,8 @@
 * [CodeSquad_Swift](CodeSquadSwift/README.md)
     * [Level2](CodeSquadSwift/Level2/README.md)
         * [ConvertUnit](CodeSquadSwift/Level2/ConvertUnit.md)
-        * [LadderGame](CodeSquadSwift/Level2/LadderGame.md)
+        * [LadderGame](CodeSquadSwift/Level2/SwiftLadderGame.md)
 * [Algorithm](Algorithm/README.md)
     * [HelloCoding by Swift](Algorithm/HelloCoding/README.md)
-        * [BinarySearch](Algorithm/HelloCoding/BinarySearch/README.md)
+        * [BinarySearch](Algorithm/HelloCoding/BinarySearch.md)
             
