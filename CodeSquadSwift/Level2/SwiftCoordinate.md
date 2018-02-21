@@ -17,21 +17,21 @@ https://github.com/dely2p/swift-coordinate
 
 <img src="./img/Coordinate.png" width="60%" height="60%" align="center">
 
-: 내가 짰던 코드는 main, MyPoint, MyLine, MyTriangle, MyRect, MyShapeCreator, InputView, OutputView struct와 MyShape, MyDescription protocol 로 나누어진다.
+: 내가 짰던 코드는 main, MyPoint, MyLine, MyTriangle, MyRect, MyShapeCreator, InputView, OutputView struct와 MyShape, MyDescription protocol 로 나누어진다.<br  /><br  />
 
 
  > 각 클래스를 설명하자면,
  
- main: InputView와 MyShapeCreator, OutputView를 사용할 수 있도록 중간다리 역할의 컨트롤러
-    InputView: 좌표입력을 받는 뷰
-    OutputView: 좌표를 ANSI Code를 이용해 출력해주는 뷰
-    MyPoint: 좌표입력을 한 개 받았을 때 (점의 객체)
-    MyLine: 좌표입력을 두 개 받았을 때 (선의 객체)
-    MyTriangle: 좌표입력을 세 개 받았을 때 (삼각형의 객체)
-    MyRect: 좌표입력을 네 개 받았을 때 (사각형의 객체)
-    MyShapeCreator: 입력받은 좌표가 정상값인지 여부를 체크하고, '-'와 ','를 기준으로 분리하여 MyShape 타입으로 리턴하는 역할
-    MyShape: 프로토콜로 calculateOfPosition()과 resultOfMyShape()의 메소드를 갖고 있다. MyPoint, MyLine, MyTriangle, MyRect에서 사용한다.
-    MyDescription: 프로토콜로 출력문구를 만드는 resultDescription 프로퍼티를 갖고있다. MyPoint, MyLine, MyTriangle, MyRect에서 사용한다.
+ main: InputView와 MyShapeCreator, OutputView를 사용할 수 있도록 중간다리 역할의 컨트롤러<br  />
+    InputView: 좌표입력을 받는 뷰<br  />
+    OutputView: 좌표를 ANSI Code를 이용해 출력해주는 뷰<br  />
+    MyPoint: 좌표입력을 한 개 받았을 때 (점의 객체)<br  />
+    MyLine: 좌표입력을 두 개 받았을 때 (선의 객체)<br  />
+    MyTriangle: 좌표입력을 세 개 받았을 때 (삼각형의 객체)<br  />
+    MyRect: 좌표입력을 네 개 받았을 때 (사각형의 객체)<br  />
+    MyShapeCreator: 입력받은 좌표가 정상값인지 여부를 체크하고, '-'와 ','를 기준으로 분리하여 MyShape 타입으로 리턴하는 역할<br  />
+    MyShape: 프로토콜로 calculateOfPosition()과 resultOfMyShape()의 메소드를 갖고 있다. MyPoint, MyLine, MyTriangle, MyRect에서 사용한다.<br  />
+    MyDescription: 프로토콜로 출력문구를 만드는 resultDescription 프로퍼티를 갖고있다. MyPoint, MyLine, MyTriangle, MyRect에서 사용한다.<br  /><br  />
 
 
 
