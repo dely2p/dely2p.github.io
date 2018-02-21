@@ -6,41 +6,39 @@ https://github.com/dely2p/swift-coordinate
 ---
 
 - ### 기간
- : 2017.10.26 - 2017.11.06
+ : 2017.11.06 - 2017.11.17
 - ### 느낀점
- : 이 프로젝트부터 JK의 코드리뷰를 받기 시작했다.
-    변수명도 personNum, rndNum, j와 같이 작성했던 나의 잘못된 습관도 고치게 되었고, 입력과 출력을 하나의 메소드에서 몽땅 동작하도록 만들었던 것들을 메소드 분리를 통해 간략하게 만드는 방법도 배우고, 불필요한 코드를 줄여서 한눈에 코드가 들어오도록 개선할 수 있었다. 또 UnitTest도 생전처음으로 해보게 되었다.
-    사실 당시 가장 어려웠던 것은 자바에서 get, set으로 클래스 내 속성값을 사용하던 옛 지식과, 접근 제어를 private으로 두지 않고 직접 접근해서 마구잡이로 사용했던 못된 옛 습관 덕분에 `Data Object`를 이해하는 데 한참 걸렸다. 내 머릿속에 어렴풋이 남아있는 DTO가 알고보니 Data Object과 같았는데, 특히 swift는 객체로 데이터를 넘기고 사용하는 것을 더 선호한다는 것을 이 때 배울 수 있었다. ~~(사실 아직도 프젝을 하며 배우고 있다..)~~
+ : 이 좌표계산기 과제를 수행하면서는 이전 과제에서 피드백 받았던 것을 적용하려고 많은 노력을 했다. 메소드 분리나, 변수명의 구체성, 객체 나누기 등.. 그리고 이 과제를 수행하면서는 커밋을 작업에 따라 세부적으로 나누어서 작성하고, 왠만하면 강제 옵셔널을 사용을 지양하는 것, 예외처리를 배울 수 있었다. 그리고 프로토콜로 인터페이스 추상화를 통해 내부 속성과 상관없이 데이터를 넘겨줄 수 있고, 두개의 다른 프로토콜을 `&`를 이용하여 함께 사용함으로써 outputView에서 각각에 맞게 좀 더 효율적으로 두 개의 프로토콜을 사용할 수 있다는 것도 배울 수 있었다.
+  또한 Git 사용을 하면서 가끔씩 rebase를 하지않아 코드가 꼬이기도 했지만 그에 따른 해결방법도 배울 수 있었다.
 
 ---
 
 - ### 코드 분석
 
-<img src="./img/LadderGame1.png" width="60%" height="60%" align="center">
+<img src="./img/Coordinate1.png" width="60%" height="60%" align="center">
 
-: 내가 짰던 코드는 main, InputView, ResultView, LadderGame, LadderGameInfo, LadderPlayer 클래스로 나누어진다.
-사실 그 때 MVC로 나누어서 만든 것은 아닌데.. 내가 지금 분석하다보니 MVC로 나뉘어 지는 것 같아서 원형으로 묶어보았다.
+: 내가 짰던 코드는 main, MyPoint, MyLine, MyTriangle, MyRect, MyShapeCreator, InputView, OutputView struct와 MyShape, MyDescription protocol 로 나누어진다.
 
 
-  
  > 각 클래스를 설명하자면,
  
- main: 사용자 입력과 게임동작 그리고 결과 출력 전반을 컨트롤 하는 컨트롤러 역할
- InputView: 사용자에게 참여자 이름과 사다리 높이를 입력받는 역할 (입력 받을 때 space를 기준으로 분리하는 메소드도 포함)
- 
- ResultView: 사다리 게임을 출력하는 역할
- LadderGameInfo: Data object로 InputView에서 LadderGame로 참여자 수와 사다리 높이 데이터를 넘길 때 사용된다.
- LadderGame: 사다리 게임에서 step의 유무를 랜덤으로 정해주는데, LadderGameInfo를 이용하여 랜덤값을 생성하는 역할
- LadderPlayer: 참여자의 이름을 가지고 있는 DataObject로 이름을 return하는 메소드를 가지고 있다.
+ main: InputView와 MyShapeCreator, OutputView를 사용할 수 있도록 중간다리 역할의 컨트롤러
+ InputView: 좌표입력을 받는 뷰
+ OutputView: 좌표를 ANSI Code를 이용해 출력해주는 뷰
+ MyPoint: 좌표입력을 한 개 받았을 때 (점의 객체)
+ MyLine: 좌표입력을 두 개 받았을 때 (선의 객체)
+ MyTriangle: 좌표입력을 세 개 받았을 때 (삼각형의 객체)
+ MyRect: 좌표입력을 네 개 받았을 때 (사각형의 객체)
+ MyShapeCreator: 입력받은 좌표가 정상값인지 여부를 체크하고, '-'와 ','를 기준으로 분리하여 MyShape 타입으로 리턴하는 역할
+ MyShape: 프로토콜로 calculateOfPosition()과 resultOfMyShape()의 메소드를 갖고 있다. MyPoint, MyLine, MyTriangle, MyRect에서 사용한다.
+ MyDescription: 프로토콜로 출력문구를 만드는 resultDescription 프로퍼티를 갖고있다. MyPoint, MyLine, MyTriangle, MyRect에서 사용한다.
 
 
 
   > 셀프 코드리뷰를 해보면..
 
-1. JK 코드리뷰로 코드가 엄청 많이 깔끔해지고 간결해졌다. 이전에는 메소드의 매개변수나 초기화를 통해 데이터를 넘겨줬었는데, Data Object를 사용하니 다른 클래스에서 data를 사용할 때도 편리하고 다른사람(4개월 후의 나를 포함)이 보기에도 이해가 쉬운 코드가 되었다.(셀프칭찬)
+1. inputView가 깔끔해졌다. 정말 input만 받는다. 또한 입력값이 nil값일 때를 대비하여 옵셔널 바인딩을 사용할 줄 알게 되었다.(셀프기특)
 
-2. 조금 안타까운 것은 UnitTest이다. 당시에는 test 메소드명을 영어로 무조건 써야한다는 생각에 `testLadderGameIsMakingNewRandomValue()` 이런식으로 썼었는데 지금 보니 `LadderGame_랜덤값이_매번_새롭게_생성되는지_확인()`과 같이 눈에 띄게 작성하는 것이 더 좋았겠다.
-
-3. UnitTest에서 하나의 메소드의 코드길이가 매우 길다. 왜냐하면 값을 비교하기 위해 같은 동작을 나열해서 쭉 써놨기 때문이다. 아까 '읽기좋은코드가 좋은코드다'라는 책에서 보니 UnitTest도 반복되는 동작은 메소드를 하나두어 사용하는 것이 효율적이라고 했는데, 이것이 그에 해당하는 것 같다.
+2. 아쉬운 부분은 한 메소드 내에 코드의 길이가 길다는 것이다. 각 기능 별로 메소드 분리가 필요해 보인다. MyShapeCreator클래스의 createMyShape() 메소드 같은 경우는 무려 30줄이다.
   
   ---
