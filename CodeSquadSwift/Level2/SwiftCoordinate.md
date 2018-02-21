@@ -15,7 +15,7 @@ https://github.com/dely2p/swift-coordinate
 
 - ### 코드 분석
 
-<img src="./img/Coordinate1.png" width="60%" height="60%" align="center">
+<img src="./img/Coordinate.png" width="60%" height="60%" align="center">
 
 : 내가 짰던 코드는 main, MyPoint, MyLine, MyTriangle, MyRect, MyShapeCreator, InputView, OutputView struct와 MyShape, MyDescription protocol 로 나누어진다.
 
