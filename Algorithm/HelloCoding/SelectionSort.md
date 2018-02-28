@@ -34,4 +34,4 @@ run()
 
 ```
 <br  /><br  />
-<img src="./img/SelectionSort.png" width="60%" height="60%" align="center">
+<img src="./img/SelectionSort.png" width="30%" height="30%" align="center">
