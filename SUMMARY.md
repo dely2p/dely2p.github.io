@@ -79,4 +79,5 @@
 * [Algorithm](Algorithm/README.md)
     * [HelloCoding by Swift](Algorithm/HelloCoding/README.md)
         * [BinarySearch](Algorithm/HelloCoding/BinarySearch.md)
+        * [SelectionSort](Algorithm/HelloCoding/SelectionSort.md)
             
