@@ -33,3 +33,5 @@ func selectionSort(list: [Int]) -> [Int] {
 run()
 
 ```
+<br  /><br  />
+<img src="./img/SelectionSort.png" width="60%" height="60%" align="center">
