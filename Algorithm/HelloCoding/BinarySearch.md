@@ -1,6 +1,6 @@
 # # Binary Search
 
-- 선택정렬(Binary Search): 정렬된 list에서 어떤 원소를 찾을 때, 앞에서부터 하나씩 비교하며 찾는 것보다 가운데 값이랑 비교하여 찾는 원소보다 작은지 큰지를 알고 찾는 방향을 두는 것이 빠르다는 알고리즘.
+- 이진탐색(Binary Search): 정렬된 list에서 어떤 원소를 찾을 때, 앞에서부터 하나씩 비교하며 찾는 것보다 가운데 값이랑 비교하여 찾는 원소보다 작은지 큰지를 알고 찾는 방향을 두는 것이 빠르다는 알고리즘.
 
 https://github.com/dely2p/swift-Algorithm/blob/master/BinarySearch.playground/Contents.swift
 
