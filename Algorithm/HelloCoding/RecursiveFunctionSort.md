@@ -2,7 +2,7 @@
 
 - 재귀 소팅(RecursiveFunction Sort): 함수 자기 자신을 다시 불러서 소팅하는 것<br  />
 
-https://github.com/dely2p/swift-Algorithm/blob/master/SelectionSort.playground/Contents.swift
+https://github.com/dely2p/swift-Algorithm/blob/master/RecursiveFunctionSort.playground/Contents.swift
 
 ```swift
 
@@ -37,4 +37,4 @@ run()
 ```
 <br  /><br  />
 [ 실행결과 ]<br  />
-<img src="./img/SelectionSort.png" width="30%" height="30%" align="center">
+<img src="./img/RecursiveFunctionSort.png" width="30%" height="30%" align="center">
