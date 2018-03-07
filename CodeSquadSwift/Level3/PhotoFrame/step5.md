@@ -44,7 +44,7 @@ BViewController의 viewWillDisappear(), viewDidDisappear()와 AViewController의
 
 순서로 동작하는 것을 볼 수 있었다.<br  /><br  />
 
-2. presentedViewController vs presentingViewController
+2. **presentedViewController** vs **presentingViewController**
 <br  />
 presentedViewController : 자신이 호출한 뷰컨트롤러 저장<br  />
 presentingViewController: 자신을 호출한 뷰컨트롤러 저장<br  />
