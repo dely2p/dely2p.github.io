@@ -81,6 +81,8 @@
         * [LadderGame](CodeSquadSwift/Level2/SwiftLadderGame.md)
         * [Coordinate](CodeSquadSwift/Level2/SwiftCoordinate.md)
         * [JsonParser](CodeSquadSwift/Level2/SwiftJsonParser.md)
+    * [Level3](CodeSquadSwift/Level3/README.md)
+        * [PhotoFrame](CodeSquadSwift/Level3/PhotoFrame.md)
 * [Algorithm](Algorithm/README.md)
     * [HelloCoding by Swift](Algorithm/HelloCoding/README.md)
         * [Binary Search](Algorithm/HelloCoding/BinarySearch.md)
