@@ -18,8 +18,6 @@ YellowViewController에서 self.dismiss() 하는 것의 차이점이 뭘까요?
 
 > 알게 된 것
 
-<br  /><br  />
-
 1. dismiss()는 아이폰 앱에서 띄운 화면을 닫을 때 쓰인다.
 <br  />
 보통 현재화면에서 '닫기' 버튼을 누르면 화면이 사라지고, 코드에서도 현재화면의 버튼에 해당하는 메소드에서 self.dismiss()를 호출하기 때문에 '스스로 닫는다'라고 생각할 수 있지만.. 사실 알고보면 현재 화면을 닫는 주체는 **이전에 현재 화면을 띄운 뷰컨트롤러**이다.<br  /><br  />
@@ -35,7 +33,6 @@ YellowViewController에서 self.dismiss() 하는 것의 차이점이 뭘까요?
 ```
 self.dismiss(animated: true, completion: {(print("close pink View"))})
 ```
-
 BViewController의 viewWillDisappear(), viewDidDisappear()와 AViewController의 viewWillAppear(), viewDidAppear()를 작성하여 출력을 비교해보니<br  />
 ```
 1. bVC의 viewWillDisappear()
