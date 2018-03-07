@@ -34,12 +34,14 @@ YellowViewController에서 self.dismiss() 하는 것의 차이점이 뭘까요?
 self.dismiss(animated: true, completion: {(print("close pink View"))})
 ```
 BViewController의 viewWillDisappear(), viewDidDisappear()와 AViewController의 viewWillAppear(), viewDidAppear()를 작성하여 출력을 비교해보니<br  />
+
 ```
-1. bVC의 viewWillDisappear()
-2. aVC의 viewDidAppear()
-3. bVC의 viewDidDisappear()
-4. completion 클로저 호출
+1.bVC의 viewWillDisappear()
+2.aVC의 viewDidAppear()
+3.bVC의 viewDidDisappear()
+4.completion 클로저 호출
 ```
+
 순서로 동작하는 것을 볼 수 있었다.<br  /><br  />
 
 2. presentedViewController vs presentingViewController
