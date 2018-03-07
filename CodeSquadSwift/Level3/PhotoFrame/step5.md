@@ -1,9 +1,12 @@
 # # Step5. ViewController 프로그래밍
 
-> 실행화면<br  />
+> 실행화면
+<br  />
 
-> 피드백<br  />
-[yellowVC.dismiss() vs self.dismiss() 차이점](https://github.com/dely2p/swift-photoframe/issues/13)<br  />
+> 피드백
+<br  />
+yellowVC.dismiss() vs self.dismiss() 차이점: https://github.com/dely2p/swift-photoframe/issues/13
+<br  />
 
 ```
 ViewController에서 yellowVC.dismiss() 하는 것과
@@ -13,7 +16,8 @@ YellowViewController에서 self.dismiss() 하는 것의 차이점이 뭘까요?
 
 <br  />
 
-> 알게 된 것<br  /><br  />
+> 알게 된 것
+<br  /><br  />
 
 1. dismiss()는 아이폰 앱에서 띄운 화면을 닫을 때 쓰인다.<br  />
 보통 현재화면에서 '닫기' 버튼을 누르면 화면이 사라지고, 코드에서도 현재화면의 버튼에 해당하는 메소드에서 self.dismiss()를 호출하기 때문에 '스스로 닫는다'라고 생각할 수 있지만.. 사실 알고보면 현재 화면을 닫는 주체는 **이전에 현재 화면을 띄운 뷰컨트롤러**이다.<br  /><br  />
@@ -43,6 +47,7 @@ BViewController의 viewWillDisappear(), viewDidDisappear()와 AViewController의
 ```
 순서로 동작하는 것을 볼 수 있었다.<br  /><br  />
 
-2. **presentedViewController** vs **presentingViewController**<br  />
+2. **presentedViewController** vs **presentingViewController**
+<br  />
 presentedViewController : 자신이 호출한 뷰컨트롤러 저장<br  />
 presentingViewController: 자신을 호출한 뷰컨트롤러 저장<br  />
