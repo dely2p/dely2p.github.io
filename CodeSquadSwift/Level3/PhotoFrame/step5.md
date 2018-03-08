@@ -6,6 +6,7 @@ yellowVC.dismiss() vs self.dismiss() 차이점: https://github.com/dely2p/swift-
 <br  />
 
 ```
+@godrm
 ViewController에서 yellowVC.dismiss() 하는 것과
 YellowViewController에서 self.dismiss() 하는 것의 차이점이 뭘까요?
 둘 다 동작할까요?
