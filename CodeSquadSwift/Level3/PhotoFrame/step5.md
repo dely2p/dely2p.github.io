@@ -1,9 +1,5 @@
 # # Step5. ViewController 프로그래밍
 
-> 실행화면
-
- <br  />
-
 > 피드백
 
 yellowVC.dismiss() vs self.dismiss() 차이점: https://github.com/dely2p/swift-photoframe/issues/13
@@ -33,7 +29,7 @@ YellowViewController에서 self.dismiss() 하는 것의 차이점이 뭘까요?
 ```
 self.dismiss(animated: true, completion: {(print("close pink View"))})
 ```
-BViewController의 viewWillDisappear(), viewDidDisappear()와 AViewController의 viewWillAppear(), viewDidAppear()를 작성하여 출력을 비교해보니<br  />
+BViewController의 viewWillDisappear(), viewDidDisappear()와 AViewController의 viewWillAppear(), viewDidAppear()를 작성하여 출력을 비교해보니
 
 ```
 1.bVC의 viewWillDisappear()
