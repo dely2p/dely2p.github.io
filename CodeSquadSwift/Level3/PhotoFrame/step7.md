@@ -2,7 +2,9 @@
 
 > 피드백
 
-String.init(format:) 방식으로 개선하기: https://github.com/dely2p/swift-photoframe/issues/19
+https://github.com/dely2p/swift-photoframe/issues/19
+
+1. String.init(format:) 방식으로 개선하기
 <br  />
 
 ```

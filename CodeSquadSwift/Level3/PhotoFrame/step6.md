@@ -2,7 +2,9 @@
 
 > 피드백
 
-여러번 push 한 상태에서 맨 앞으로 pop하는 방법은?: https://github.com/dely2p/swift-photoframe/issues/16
+https://github.com/dely2p/swift-photoframe/issues/16
+
+1. 여러번 push 한 상태에서 맨 앞으로 pop하는 방법은?
 <br  />
 
 ```

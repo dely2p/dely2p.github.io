@@ -2,7 +2,9 @@
 
 > 피드백
 
-yellowVC.dismiss() vs self.dismiss() 차이점: https://github.com/dely2p/swift-photoframe/issues/13
+https://github.com/dely2p/swift-photoframe/issues/13
+
+1. yellowVC.dismiss() vs self.dismiss() 차이점
 <br  />
 
 ```
