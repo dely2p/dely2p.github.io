@@ -22,7 +22,7 @@ https://github.com/dely2p/swift-vendingmachineapp/issues/4
 > 알게 된 것
 
 음료수 객체들의 구조는 다음과 같다.<br  />
-<img src="./img/step1.png" width="30%" height="30%" align="center"><br  />
+<img src="./img/step1.png" width="60%" height="60%" align="center"><br  />
 description 프로퍼티는 Beverage에서 각 음료수 객체에 override 되어 있고, 각 Level 별로 desciption에 들어가는 내용이 다르다.<br  />
 피드백의 내용은 Level2에 있는 각 객체들의 description이 중복된 코드인데 코드를 줄이는 방법에 대해서 생각해보라고 하셨다.<br  />
 <br  />
