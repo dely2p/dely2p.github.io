@@ -96,6 +96,7 @@
         * [VendingMachineApp](CodeSquadSwift/Level3/VendingMachineApp/README.md)
             * [Step1](CodeSquadSwift/Level3/VendingMachineApp/step1.md)
             * [Step2](CodeSquadSwift/Level3/VendingMachineApp/step2.md)
+            * [Step3](CodeSquadSwift/Level3/VendingMachineApp/step3.md)
 * [Algorithm](Algorithm/README.md)
     * [HelloCoding by Swift](Algorithm/HelloCoding/README.md)
         * [Binary Search](Algorithm/HelloCoding/BinarySearch.md)
