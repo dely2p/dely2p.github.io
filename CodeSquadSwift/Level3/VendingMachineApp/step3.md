@@ -1,15 +1,16 @@
-# # Step2. MVC 패턴
+# # Step3. 앱 생명주기와 객체 저장
 
 > 개발한 것(배운 것)
 
-: VendingMachineApp step2에서는 storyboard에서 앱 뷰를 만들고 버튼과 라벨을 ViewController와 연결해서 코드를 작성하여 기능을 만드는 것이다. 안드로이드 앱 개발과는 달리 control key와 마우스로 해당 UI를 끌어다가 코드 작성 화면에 놓으면 연결되기 때문에 참 쉽다.<br  />
-그래서 내가 만든 storyboard는 다음과 같다.<br  /><br  />
-<img src="./img/step2.png" width="80%" height="80%" align="center"><br  /><br  />
+: VendingMachineApp step3에서는 앱의 데이터를 저장하기 위해 아카이빙을 하고 저장한 데이터를 가져오기 위해 언아카빙을 하는 것을 만들었다. 앱 생명주기에 맞춰서 그 코드들을 넣어줬고 각 모델마다 NSObject와 NSCoding 프로토콜을 넣고 encode() init() 코드를 구현해주었다.
+
+사실 Codable을 사용해보려 했지만 encode, decode 
 
 
-1. alert
-<br  />
 
+
+
+1. alert<br  />
 : alert는 형식이 정해져있어서 형식대로만 작성하면 되는 것 같다.<br  /><br  />
 <img src="./img/alert.png" width="80%" height="80%" align="center"><br  />
 ```swift
