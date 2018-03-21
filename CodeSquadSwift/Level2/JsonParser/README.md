@@ -1,4 +1,5 @@
-# # 좌표계산기 (swift-coordinate)
+# CodeSquad_Swift > Level2 > JsonParser
+# # JsonParser (swift-JsonParser)
 https://github.com/dely2p/swift-coordinate
 
   2018.02.21 코드 분석

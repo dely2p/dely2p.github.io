@@ -1,3 +1,4 @@
+# CodeSquad_Swift > Level2 > LadderGame
 # # 사다리 게임 (swift-laddergame)
 https://github.com/dely2p/swift-laddergame
 
