@@ -2,8 +2,7 @@
 
 > 개발한 것(배운 것)
 
-<br  />
-### 1. NSObject와 NSCoding 프로토콜**
+### 1. NSObject와 NSCoding 프로토콜
 
 : VendingMachineApp step3에서는 앱의 데이터를 저장하기 위해 아카이빙을 하고 저장한 데이터를 가져오기 위해 언아카빙을 하는 것을 만들었다. 앱 생명주기에 맞춰서 그 코드들을 넣어줬고 각 모델마다 NSObject와 NSCoding 프로토콜을 넣고 encode() init() 코드를 구현해주었다.
 
@@ -76,42 +75,37 @@ var vendingMachine = VendingMachine
 <br  />
 > 피드백
 
-https://github.com/dely2p/swift-vendingmachineapp/issues/10<br  />
-https://github.com/dely2p/swift-vendingmachineapp/issues/11<br  />
-https://github.com/dely2p/swift-vendingmachineapp/issues/12<br  />
-
-<br  />
-1. 음료수 type을 넣었던 enum을 기존 VendingMachine 코드를 사용하여 수정하기<br />
-2. countOfEachBeverage 배열도 기존 코드 써서 수정하기
-<br  />
-3. IBAction 반복되는 코드 한꺼번에 처리하기
-
-```swift
-VendingMachineApp/VendingMachineApp/ViewController.swift
-	
-+    
-+    @IBAction func addMenu9(_ sender: Any) {
-+        alertCountOfBeverage(type: TypeOf.kantanta)
-+    }
-```
-
-```swift
-@godrm
-여기 액션들도 반복되는 코드처럼 보이는데 한꺼번에 처리하려면 어떻게 해야할까 고민해보세요.
-```
+https://github.com/dely2p/swift-vendingmachineapp/issues/18<br  />
+https://github.com/dely2p/swift-vendingmachineapp/issues/19<br  />
 
 <br  />
 > 알게 된 것
 
-1. IBOutlet collection 뿐만 아니라 IBAction도 동일하게 여러개의 버튼에 한꺼번에 접근할 수 있었다. (storyboard에서 각 버튼의 태그를 지정해준 후 for문에서 sender.tag로 눌러진 버튼을 구분할 수 있음)
+1. applicationWillResignActive, applicationDidEnterBackground, applicationWillTerminate 동작 차이<br />
+	- applicationWillResignActive: 홈 버튼을 눌러서 앱이 활성화에서 비활성화 되었을 때,<br />
+	- applicationDidEnterBackground: 앱이 백그라운드 상태일 때,<br />
+	- applicationWillTerminate: 앱이 종료될 때(보통 앱이 아름답게 꺼질 때 실행됨. 강제종료 x)<br />
 
+
+2. AppDelegate가 아닌 ViewController에서 vendingMachine에 접근할 수 있을까?<br  />
+: 이 피드백은 AppDelegate와 ViewController에서 둘다 서로 접근해서 vendingMachine을 가져오기 때문이었다.<br  />
+
+
+VendingMachineApp/VendingMachineApp/AppDelegate.swift
+
+```swift
+if let vc = window?.rootViewController?.childViewControllers.first as? ViewController {
+            vc.vendingMachine = vendingMachine
 ```
-@IBOutlet var addNumberOfMenu: [UIButton]!
-@IBAction func addBeverage(sender: UIButton) {
-    var type = TypeOf.otherBeverage
-    for button in addNumberOfMenu where button.tag == sender.tag {
-        type = vendingMachine.typeSelector(tag: button.tag)
-    }
-    alertCountOfBeverage(type: type)
-}
+
+VendingMachineApp/VendingMachineApp/ViewController.swift
+
+```swift
+vendingMachine = (UIApplication.shared.delegate as? AppDelegate)?.sharedInstance()
+        self.updateCountOfEachBeverage(vendingMachine: self.vendingMachine)
 ```
+
+<br  />
+처음에 초보자 의식흐름에 따라 언아카이빙을 하는 부분을 applicationDidBecomeActive()에 두었는데 (왜냐하면 앱이 활성화 될 때이니 처음 실행된다고 생각함), 앱 실행 시 저장해둔 데이터가 뜨지 않는 문제가 생겼던 것이다. 이는 내가 앱 생명주기와 소스코드의 의미를 잘 모르고 코드작성을 했기 때문으로.. 그에 따른 많은 헤매임의 시간을 가져야했다.
+
+알고보니, 앱이 실행되면서 AppDelegate의 applicationdidFinishLaunchingWithOptions을 먼저 거치게 되는데 이곳에서 말 그대로 앱이 뜰 준비를 마치게 된다. 이 때 언아카이빙을 하면 저장된 데이터가 들어있는 vendingMachine이 생성되게 되고, 이후 실행되는 ViewController의 vviewDidLoad()에서 이 vendingMachine을 ViewController가 가지고 가게 된다. 그래서 굳이 AppDelegate에서 ViewController에 접근하여 vendingMachine을 가져올 필요가 없었던 것!
