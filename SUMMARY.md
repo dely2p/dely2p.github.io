@@ -90,6 +90,7 @@
         * [ConvertUnit](CodeSquadSwift/Level2/ConvertUnit/README.md)
         * [LadderGame](CodeSquadSwift/Level2/LadderGame/README.md)
         	* [step1](CodeSquadSwift/Level2/LadderGame/step1.md)
+        	* [step2](CodeSquadSwift/Level2/LadderGame/step2.md)
         * [Coordinate](CodeSquadSwift/Level2/Coordinate/README.md)
         * [JsonParser](CodeSquadSwift/Level2/JsonParser/README.md)
         * [CardGame](CodeSquadSwift/Level2/CardGame/README.md)
