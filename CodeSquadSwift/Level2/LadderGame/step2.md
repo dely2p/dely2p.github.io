@@ -78,7 +78,6 @@ https://github.com/dely2p/swift-laddergame/issues/2
 <br  />
 > 알게 된 것
 
-<br  />
 1. prompt() 함수에서 printLadder() 함수 분리하기<br  />
 : prompt() 함수 이름의 의미가 입력받기만 뜻하는 것 같은데 사다리 출력까지 같이 하고 있기 때문에 main()을 두어서 prompt(), printLadder()을 따로 분리했다.
 
@@ -89,6 +88,5 @@ func main(){
 }
 ```
 
-<br  />
 2. Boolean 값 바로 return<br  />
 : makeRandomValue()에서 boolean값을 바로 return 하면 되는데 굳이 isPrintStep 변수를 두었다. 나름 가독성 좋은 코드를 만들고자 하는 욕심이었던 듯 하나 필요없는 코드는 쓰지않는 게 좋다.
