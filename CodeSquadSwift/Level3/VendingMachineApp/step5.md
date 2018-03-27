@@ -8,7 +8,7 @@
 `옵저버 등록, 호출, Notification.Name 선언, 함수 작성`으로  
 코드를 작성하여 Notification을 할 수 있다.
 
-1) 옵저버 등록
+##### 1) 옵저버 등록
 
 ```swift
 NotificationCenter.default.addObserver(self,
@@ -17,13 +17,13 @@ NotificationCenter.default.addObserver(self,
                    object: nil)
 ```
 
-2) 옵저버 호출
+##### 2) 옵저버 호출
 
 ```swift
 NotificationCenter.default.post(name: Notification.Name.DidResetInventoryBox, object: self)
 ```
 
-3) Notification.Name 선언
+##### 3) Notification.Name 선언
 
 ```swift
 extension Notification.Name {
@@ -31,7 +31,7 @@ extension Notification.Name {
 }
 ```
 
-4) 함수 작성
+##### 4) 함수 작성
 
 ```swift
 @objc func changeInventoryBox() {
@@ -44,13 +44,13 @@ extension Notification.Name {
 
 > 피드백
 
-https://github.com/dely2p/swift-vendingmachineapp/issues/33
+https://github.com/dely2p/swift-vendingmachineapp/issues/33  
 https://github.com/dely2p/swift-vendingmachineapp/issues/34
 
 
 > 알게 된 것
 
-1. Notification.Name 선언  
+### 1. Notification.Name 선언  
 : Notification.Name 선언을 해서 사용하면 하드 코딩을 하지 않아도 된다.(더 깔끔한 코드)
 
 ```swift
@@ -63,7 +63,7 @@ https://github.com/dely2p/swift-vendingmachineapp/issues/34
 NotificationCenter.default.post(name: Notification.Name.DidResetInventoryBox, object: self)
 ```
   
-2. 노티를 받을 때 데이터를 넘겨받고 싶으면?
+### 2. 노티를 받을 때 데이터를 넘겨받고 싶으면?
 : NotificationCenter.default.post() 매개변수로 UserInfo를 두어 데이터를 넘겨받을 수 있다.
 
 ```swift
