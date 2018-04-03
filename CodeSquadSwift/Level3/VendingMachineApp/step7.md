@@ -1,56 +1,30 @@
-# # Step7. 구매목록 View 코드
+# # Step7. Frame과 Bounds
 
 > 개발한 것(배운 것)
 
-### 1. self.view.addSubView()
-: VendingMachineApp step6에서는 self.view.addSubView()를 이용하여 구매한 음료 이미지를 하단에 출력하도록 만들었다. 
+### 1. 음료 자판기 앱 사용자모드와 관리자모드 뷰 나누기
+: VendingMachineApp step7에서는 기존에 ViewController에서 하나의 뷰에 음료 추가와 구매버튼을 두어 음료 자판기 앱 사용자모드와 관리자모드를 둘 다 넣어두었는데, 이를 분리하는 작업을 했다.
+뷰 단에서는 버튼과 라벨을 복사 및 분리했고, 관리자모드로 가는 버튼을 추가했다.  
 
-```swift   
-let imageView = ImageViewMaker.makeImageView(imageX: imageX)
-imageView.image = image
-self.view.addSubview(imageView)
-self.imageX += 50
+![관리자모드화면](img/step7.png)
 
-```
-
-### 2. Class Name을 이용하여 image 파일명 가져오기
-: Class Name과 image 파일명이 같은 것을 이용하여 구매한 이미지를 가져올 수 있도록 만들었다.  
-`String(describing: type(of: self))`으로 (self==Beverage(cf, StrawberryMilk)) 클래스명을 가져오고, `.jpg`를 붙여서 String을 return 해주었다.  
-그리고 `UIImage(named: imageName)`로 이미지를 가져 올 수 있다. 
-
+### 2. prepare(for segue: UIStoryboardSegue, sender: Any?)
+: 사용자모드와 관리자모드를 나누다보니 AppDelegate에서 ViewController로 의존성 주입으로 넣어준 vendingMachine 인스턴스를 ManagerViewController에서는 사용할 수 없다는 문제점이 생겼다.  
+그래서 
 ```swift
-let imageName = String(describing: beverage.bringImageName)
-guard let image = UIImage(named: imageName) else {
-    return
-}
-```
-
-```swift
-protocol ImageMapper {
-    var bringImageName: String { get }
-}
-
-extension ImageMapper {
-    var bringImageName: String {
-        let name = String(describing: type(of: self))
-        let result = name + ".jpg"
-        return result
+override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if let admin = segue.destination as? ManagerViewController {
+        admin.vendingMachine = vendingMachine
     }
 }
 ```
 
 > 피드백
 
-https://github.com/dely2p/swift-vendingmachineapp/issues/40  
-https://github.com/dely2p/swift-vendingmachineapp/issues/41  
-https://github.com/dely2p/swift-vendingmachineapp/issues/42  
-https://github.com/dely2p/swift-vendingmachineapp/issues/43  
-https://github.com/dely2p/swift-vendingmachineapp/issues/44  
-https://github.com/dely2p/swift-vendingmachineapp/issues/45  
-https://github.com/dely2p/swift-vendingmachineapp/issues/46  
-https://github.com/dely2p/swift-vendingmachineapp/issues/47  
-https://github.com/dely2p/swift-vendingmachineapp/issues/48  
-https://github.com/dely2p/swift-vendingmachineapp/issues/49  
+https://github.com/dely2p/swift-vendingmachineapp/issues/52  
+https://github.com/dely2p/swift-vendingmachineapp/issues/53  
+https://github.com/dely2p/swift-vendingmachineapp/issues/54  
+https://github.com/dely2p/swift-vendingmachineapp/issues/55  
 
 
 > 알게 된 것
