@@ -142,4 +142,6 @@
         * [Selection Sort](Algorithm/HelloCoding/SelectionSort.md)
         * [Recursive Function Sort](Algorithm/HelloCoding/RecursiveFunctionSort.md)
         * [Breadth First Search](Algorithm/HelloCoding/BreadthFirstSearch.md)
-            
+	* [EveryDay Algorithm](Algorithm/EveryDay/README.md)
+        * [Question01](Algorithm/EveryDay/Question01.md)
+        * [Question02](Algorithm/EveryDay/Question02.md)            
