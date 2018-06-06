@@ -1,5 +1,5 @@
 {
-    "plugins": ["theme-official@2.1.1", "youtube", "disqus"]
+    "plugins": ["theme-official@2.1.1", "youtube"],["disqus"]
     "pluginsConfig": {
         "disqus": {
             "shortName": "XXXXXXX"
