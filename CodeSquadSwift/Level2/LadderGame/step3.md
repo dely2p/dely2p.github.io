@@ -8,6 +8,7 @@
 	또한 private에 대한 필요성을 잘 못느껴서 몽땅 public으로 뒀었는데 객체 내에서만 사용하는 메소드나 프로퍼티에서는 private으로 쓰는 게 좋다는 피드백을 받았다.  
 	이번 step에서 JK의 많은 피드백만큼 배운 것도 많았다:)
 
+  
 - 피드백
 
 	https://github.com/dely2p/swift-laddergame/issues/3  
@@ -27,6 +28,7 @@
 	https://github.com/dely2p/swift-laddergame/issues/17    
 	
 
+  
 - 알게 된 것
 
 	1. 접근제어 지정하기  
@@ -47,7 +49,6 @@
 		 		}
 		 }
 		 ```
-	 
 
 	3. 메소드 역할에 따라 어떤 객체에 둘 지 정하기
 		- makeRandomValue() 메소드는 LadderGame에서 사다리의 bar를 놓을지 안놓을지 정할 때 사용 할 랜덤 숫자를 만들게 된다.  

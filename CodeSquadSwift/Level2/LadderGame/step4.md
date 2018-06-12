@@ -5,6 +5,8 @@
 	#####1. 콘솔 입/출력를 제외한 나머지 모든 소스 코드에 있는 모든 메서드에 대한 단위 테스트 로직을 구현한다.
 
 	: step4에서는 어마무시한 테스트코드 구현을 배웠다. 테스트코드를 작성하면서 나는 내 코드에 대한 원망을 하게되었다. 기능 별로 쪼개서 짰어야 하는데.. 데이터를 넘겨주도록 짜야하는데.. 엉망이었다. 그래서 테스트를 할 수 없었다.ㅠㅠ 그래서 InputView부터 엄청 뜯어고쳤다;;;;; 엉엉ㅠㅠ
+	
+	
 - 피드백
 
 	https://github.com/dely2p/swift-laddergame/issues/18  
@@ -14,6 +16,7 @@
 	https://github.com/dely2p/swift-laddergame/issues/22  
 	https://github.com/dely2p/swift-laddergame/issues/23  
 
+  
 - 알게 된 것
 
 	1. Data Object의 필요성 (LadderGameInfo)  

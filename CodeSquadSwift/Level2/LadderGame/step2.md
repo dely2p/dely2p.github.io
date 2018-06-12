@@ -1,6 +1,7 @@
 # # Step2. 함수 역할 분리
 
-- 개발한 것(배운 것)
+- 개발한 것(배운 것)  
+
 
 	#####1. 사다리 게임 함수 분리 및 depth 줄이기
 
@@ -9,14 +10,14 @@
 	아래와 같이 메소드 분리를 해보았다.  
 
 	```swift
-func prompt(){}
-func printLadder(numberOfPlayer: String, heightForLadder: String){}
-func printLadderBar(numberOfPlayer: String){}
-func printLadderStep(index: Int){}
-func makeRandomValue() -> Bool{}
-```
+	func prompt(){}
+	func printLadder(numberOfPlayer: String, heightForLadder: String){}
+	func printLadderBar(numberOfPlayer: String){}
+	func printLadderStep(index: Int){}
+	func makeRandomValue() -> Bool{}
+	```
+	
 	처음에 사용자로부터 입력을 받는 prompt()를 만들고, 사다리를 출력하는 printLadder()를 만들었다. 그리고는 사다리의 가로(printLadderBar())와 세로(printLadderStep())를 각 메소드에서 출력하도록 연결해두었다. 마지막으로 랜덤값을 만들어내는 makeRandomValue()를 만들어서 랜덤값이 필요할 때마다 사용할 수 있도록 해두었다  
-
 
 	메소드 분리를 하니 조금 깔끔해보였다. 메소드를 타고 타고 for문을 도는 것이 조금 마음에 걸렸지만 메소드 분리를 위해서는 어쩔 수 없었다.  
 
@@ -74,6 +75,7 @@ func makeRandomValue() -> Bool{}
 
 	https://github.com/dely2p/swift-laddergame/issues/2
 
+  
 
 - 알게 된 것
 
