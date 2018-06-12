@@ -147,6 +147,7 @@
         	* [step1](CodeSquadSwift/Level2/LadderGame/step1.md)
         	* [step2](CodeSquadSwift/Level2/LadderGame/step2.md)
         	* [step3](CodeSquadSwift/Level2/LadderGame/step3.md)
+        	* [step4](CodeSquadSwift/Level2/LadderGame/step4.md)
         * [Coordinate](CodeSquadSwift/Level2/Coordinate/README.md)
         * [JsonParser](CodeSquadSwift/Level2/JsonParser/README.md)
         * [CardGame](CodeSquadSwift/Level2/CardGame/README.md)
