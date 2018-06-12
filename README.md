@@ -2,7 +2,7 @@
 
 > url
 
-   https://dely2p.gitbooks.io/blog/content/
+   https://dely2p.gitbook.io/blog
 
 > Github
 
