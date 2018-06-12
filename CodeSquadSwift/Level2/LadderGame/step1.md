@@ -1,6 +1,6 @@
 # # Step1. 시작하기
 
-> 개발한 것(배운 것)
+> - 개발한 것(배운 것)
 
 ### 1. 간단한 사다리 게임 구현
 
@@ -35,13 +35,13 @@ for _ in 0..<Int(ladderHeight!)! {
 ``` 
 
 <br  />
-> 피드백
+> - 피드백
 
 https://github.com/dely2p/swift-laddergame/issues/1<br  />
 
 
 <br  />
-> 알게 된 것
+> - 알게 된 것
 
 1. 변수명 개선하기
 : swift에서는 변수의 의미가 명확한 것을 중시한다는 것을 배웠다. 기존에 c언어나 java에서는 변수명을 축약해서 쓰기도 하고, for문에서 선언되는 index는 i, j, k로 쓰는 것이 흔했는데 swift는 그러면 안되나보다. 흑ㅠㅠ
