@@ -140,6 +140,8 @@
             * [20180608](TIL/2018/06/TIL-20180608.md)
             * [20180611](TIL/2018/06/TIL-20180611.md)
             * [20180612](TIL/2018/06/TIL-20180612.md)
+            * [20180613](TIL/2018/06/TIL-20180613.md)
+            * [20180614](TIL/2018/06/TIL-20180614.md)
 * [CodeSquad_Swift](CodeSquadSwift/README.md)
     * [Level2](CodeSquadSwift/Level2/README.md)
         * [ConvertUnit](CodeSquadSwift/Level2/ConvertUnit/README.md)
