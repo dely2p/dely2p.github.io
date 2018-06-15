@@ -179,3 +179,6 @@
 	* [EveryDay Algorithm](Algorithm/EveryDay/README.md)
         * [Question01](Algorithm/EveryDay/Question01.md)
         * [Question02](Algorithm/EveryDay/Question02.md)            
+* [Lua](Lua/README.md)
+    * [시작하기(소개 및 설치)](Lua/1_installLua.md)
+    * [루아 타입과 값](Lua/2_typeOfLua.md)
