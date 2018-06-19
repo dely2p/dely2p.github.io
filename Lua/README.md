@@ -3,7 +3,7 @@
 - [시작하기(소개 및 설치)](1_installLua.md)  
 
 
-- [타입과 값](2_2_typeOfLua.md)  
+- [타입과 값](2_typeOfLua.md)  
 
 
 - [수식](3_mathematical_expression.md)  

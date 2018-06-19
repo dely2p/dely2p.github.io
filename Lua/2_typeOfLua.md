@@ -7,7 +7,7 @@
 : 보통 유용한 값이 없음을 나타내기 위해 nil을 사용
 
 ###- boolean
-: false, true 값을 가짐. (false, nil은 거짓, true, "", 0은 참)
+: false, true 값을 가짐. (false, nil만 거짓, true, "", 다른 언어에서 false를 나타내는 `0`도 참)
 
 ###- number
 : integer과 double형을 나타냄
