@@ -214,7 +214,7 @@
         * [Recursive Function Sort](Algorithm/HelloCoding/RecursiveFunctionSort.md)
         * [Quick Sort](Algorithm/HelloCoding/QuickSort.md)
         * [Breadth First Search](Algorithm/HelloCoding/BreadthFirstSearch.md)
-        * 
+        * [Depth First Search](Algorithm/HelloCoding/DepthFirstSearch.md)
 	* [EveryDay Algorithm](Algorithm/EveryDay/README.md)
         * [Question01](Algorithm/EveryDay/Question01.md)
         * [Question02](Algorithm/EveryDay/Question02.md)            
